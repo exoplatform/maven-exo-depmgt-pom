@@ -8,14 +8,14 @@
     <relativePath />
   </parent>
   <artifactId>maven-exo-depmgt-pom</artifactId>
-  <version>24.0-20251001</version>
+  <version>24.x-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>eXo PLF:: eXo Platform Dependency Management POM</name>
   <description>Provides version of third parties artifacts to use in eXo platform projects</description>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/maven-exo-depmgt-pom.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/maven-exo-depmgt-pom.git</developerConnection>
-    <tag>24.0-20251001</tag>
+    <tag>HEAD</tag>
     <url>https://github.com/exoplatform/maven-exo-depmgt-pom</url>
   </scm>
   <properties>
@@ -27,7 +27,7 @@
     <!-- **************************************** -->
     <!-- Dependencies Versions                    -->
     <!-- **************************************** -->
-    <io.meeds.distribution.version>7.1.0-exo-20251001</io.meeds.distribution.version>
+    <io.meeds.distribution.version>7.1.x-exo-SNAPSHOT</io.meeds.distribution.version>
 
     <commons-collections4.version>4.4</commons-collections4.version>
     <rome.version>1.18.0</rome.version>
