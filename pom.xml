@@ -31,6 +31,7 @@
 
     <commons-collections4.version>4.4</commons-collections4.version>
     <rome.version>1.18.0</rome.version>
+    <ez-vcard.version>0.12.1</ez-vcard.version>
     <javax.jcr.version>1.0</javax.jcr.version>
     <javax.rmi.version>1.0.6.Final</javax.rmi.version>
     <org.apache.jackrabbit.version>1.6.5</org.apache.jackrabbit.version>
@@ -76,6 +77,30 @@
         <groupId>com.rometools</groupId>
         <artifactId>rome</artifactId>
         <version>${rome.version}</version>
+      </dependency>
+      <!-- vCard parsing, for reading contacts from a CardDAV address book.
+           The excluded dependencies serve vCard's HTML (hCard) and JSON (jCard)
+           representations, which CardDAV never uses: it carries plain vCard.
+           commons-codec and vinnie are kept, the first for base64 photos and the
+           second being the parser's own reader/writer core. -->
+      <dependency>
+        <groupId>com.googlecode.ez-vcard</groupId>
+        <artifactId>ez-vcard</artifactId>
+        <version>${ez-vcard.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>javax.jcr</groupId>
