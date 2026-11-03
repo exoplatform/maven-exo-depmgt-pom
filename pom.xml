@@ -56,8 +56,6 @@
     <org.jboss.dmr.version>1.1.1.Final</org.jboss.dmr.version>
     <version.apache.commons-digester>2.1</version.apache.commons-digester>
     <!-- 3rd party deprecated libraries versions -->
-    <transactions-jta.version>3.8.0</transactions-jta.version>
-    <com.experlog.xapool.version>1.5.0</com.experlog.xapool.version>
     <legacy.commons-chain.version>1.3.0</legacy.commons-chain.version>
     <jgroups.version>5.5.7.Final</jgroups.version>
   </properties>
@@ -289,16 +287,6 @@
         <groupId>io.github.weblegacy</groupId>
         <artifactId>commons-chain-web-jakarta-servlet</artifactId>
         <version>${legacy.commons-chain.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.experlog</groupId>
-        <artifactId>xapool</artifactId>
-        <version>${com.experlog.xapool.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.atomikos</groupId>
-        <artifactId>transactions-jta</artifactId>
-        <version>${transactions-jta.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jgroups</groupId>
